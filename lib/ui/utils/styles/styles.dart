@@ -97,8 +97,7 @@ class AppTextStyles {
 
   static TextStyle get Body3 => manrope.size(FontSizes.s11);
 
-  static TextStyle get Callout =>
-      manrope.size(FontSizes.s14).letterSpace(1.75);
+  static TextStyle get Callout => manrope.size(FontSizes.s14).letterSpace(1.75);
 
   static TextStyle get CalloutFocus => Callout.bold;
 
@@ -188,6 +187,16 @@ class Corners {
   static BorderRadius get s10Border => BorderRadius.all(s10Radius);
 
   static Radius get s10Radius => Radius.circular(s10);
+
+  /// Extra-Large
+  static double get s15 => 15;
+  static Radius get s15Radius => Radius.circular(s15);
+  static BorderRadius get s15Border => BorderRadius.all(s15Radius);
+
+  /// ExtraExtra-Large
+  static double get s30 => 30;
+  static Radius get s30Radius => Radius.circular(s30);
+  static BorderRadius get s30Border => BorderRadius.all(s30Radius);
 }
 
 class VtSpace extends StatelessWidget {

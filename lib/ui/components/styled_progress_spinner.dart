@@ -15,7 +15,9 @@ class StyledProgressSpinner extends StatelessWidget {
         width: 24,
         height: 24,
         child: CircularProgressIndicator(
-            valueColor: AlwaysStoppedAnimation<Color>(theme.accent1Darker), backgroundColor: color ?? Colors.white),
+            strokeWidth: 2,
+            valueColor: AlwaysStoppedAnimation<Color>(theme.accent1Darker),
+            backgroundColor: color ?? Colors.white),
       ),
     );
   }

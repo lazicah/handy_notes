@@ -59,7 +59,7 @@ class AppTheme {
           ..primaryText = Color(0xFF212121)
           ..secondaryText = Color(0xFF757575)
           ..divider = Color(0xFFBDBDBD)
-          ..textIcons = Color(0xFFFFFFFF);
+          ..textIcons = Color(0xFF000000);
 
       case ThemeType.Dark:
         return AppTheme(isDark: true)
@@ -77,7 +77,7 @@ class AppTheme {
           ..primaryText = Color(0xFFFFFFFF)
           ..secondaryText = Color(0xFFF3F3F3)
           ..divider = Color(0xFFBDBDBD)
-          ..textIcons = Color(0xFFFFFFFF);
+          ..textIcons = Color(0xFFFCFDFD);
     }
     return AppTheme.fromType(defaultTheme);
   }
@@ -107,7 +107,9 @@ class AppTheme {
         buttonColor: accent,
         buttonTheme: ButtonThemeData(),
         cursorColor: accent,
+        iconTheme: IconThemeData(color: textIcons),
         highlightColor: accent,
+        appBarTheme: AppBarTheme(color: bg1, elevation: 0),
         toggleableActiveColor: accent);
   }
 

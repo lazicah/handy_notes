@@ -7,7 +7,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import '../../../../locator.dart';
 
 class LogoutCommand extends BaseCommand {
-  final _firebase = locator<FireWebBaseService>();
+  final _firebase = locator<FireService>();
   LogoutCommand(BuildContext c) : super(c);
 
   Future<void> execute() async {

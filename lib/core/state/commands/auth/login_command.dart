@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 import '../../../../locator.dart';
 
 class LoginCommand extends BaseCommand {
-  final _firebase = locator<FireWebBaseService>();
+  final _firebase = locator<FireService>();
   LoginCommand(BuildContext c) : super(c);
 
   Future<void> execute({String email, String password}) async {

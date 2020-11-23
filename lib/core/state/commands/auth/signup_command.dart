@@ -10,7 +10,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class SignUpCommand extends BaseCommand {
-  final _firebase = locator<FireWebBaseService>();
+  final _firebase = locator<FireService>();
   SignUpCommand(BuildContext c) : super(c);
   Future<void> execute(
       {String email, String password, Map<String, String> others}) async {

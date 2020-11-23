@@ -10,7 +10,7 @@ import 'package:handy_notes/ui/views/main/startup_page.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
-   WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
   await setupLocator();
   runApp(
     MultiProvider(

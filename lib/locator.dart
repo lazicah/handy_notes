@@ -3,17 +3,14 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get_it/get_it.dart';
 
-
 GetIt locator = GetIt.instance;
 
 Future<void> setupLocator({bool test = false}) async {
-  
   // Services
 
-  if (kIsWeb) {
-    await Firebase.initializeApp();
-    locator.registerLazySingleton<FireWebBaseService>(() => FirebaseService());
-  }
+  await Firebase.initializeApp();
+  locator.registerLazySingleton<FireService>(() => FirebaseService());
+
   // Utils
 
   //DataSources
