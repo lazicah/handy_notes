@@ -1,3 +1,4 @@
+import 'package:handy_notes/core/state/controllers/notes_controller.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
 
@@ -14,6 +15,7 @@ List<SingleChildWidget> providers = [
 List<SingleChildWidget> independentServices = [
   ChangeNotifierProvider(create: (context) => AppController()),
   ChangeNotifierProvider(create: (context) => AuthController()),
+  ChangeNotifierProvider(create: (context) => NotesController()),
 ];
 
 List<SingleChildWidget> dependentServices = [];

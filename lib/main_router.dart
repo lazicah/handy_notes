@@ -1,3 +1,4 @@
+import 'package:handy_notes/core/models/notes/notes.dart';
 import 'package:handy_notes/ui/utils/page_routes/page_routes.dart';
 import 'package:handy_notes/ui/views/auth/auth_manager.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,10 @@ class MainRouter {
       case NotesPage.route:
         return PageRoutes.material(() => NotesPage());
       case NoteDetails.route:
-        return PageRoutes.material(() => NoteDetails());
+        NotesEntity entity = settings.arguments as NotesEntity;
+        return PageRoutes.material(() => NoteDetails(
+              entity: entity,
+            ));
       case CreateNote.route:
         return PageRoutes.material(() => CreateNote());
       default:

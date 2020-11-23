@@ -102,13 +102,12 @@ class AppTheme {
     );
     return t.copyWith(
         materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-        textSelectionColor: greyWeak,
-        textSelectionHandleColor: Colors.transparent,
         buttonColor: accent,
+        textSelectionTheme: TextSelectionThemeData(
+            selectionColor: accent, selectionHandleColor: accent),
         buttonTheme: ButtonThemeData(),
         cursorColor: accent,
         iconTheme: IconThemeData(color: textIcons),
-        highlightColor: accent,
         appBarTheme: AppBarTheme(color: bg1, elevation: 0),
         toggleableActiveColor: accent);
   }
